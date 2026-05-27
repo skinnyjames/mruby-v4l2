@@ -32,6 +32,13 @@ typedef struct mrb_v4l2 {
   int fd;
   unsigned char* front;
   unsigned char* back;
+  const char* media_dev;
+  const char* subdev_dev;
+  const char* other_subdev;
+  const char* sensor_name;
+  const char* other_sensor;
+  const char* bridge_name;
+  uint32_t    bus_fmt_code;
   camera_facing facing;
   uint32_t pixelformat;
   size_t rgba_size;

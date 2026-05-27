@@ -1,4 +1,4 @@
-camera = V4L2::Camera.init("/dev/video0", 200, 200)
+camera = V4L2::Camera.init("/dev/video0", 200, 200, V4L2::DESKTOP)
 camera.open
 
 while true
